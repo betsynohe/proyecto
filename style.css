@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Caveat', cursive;
+    font-family: 'Indie Flower', cursive;
+}
 /* barra de navegación*/
 
 .container-fluid{
@@ -19,6 +23,14 @@
   color: #c805a3;
   font-weight: 600;
   margin-left: 50px;
+}
+.titulo-inicio{
+  text-align: center;
+  color: #c805a3;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 /*main cards*/
 .cards-list {
@@ -63,7 +75,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   text-align: center;
   border-radius: 0px 0px 40px 40px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   margin-top: -80px;
   height: 40px;
 }
@@ -79,9 +91,8 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 }
 
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 460px) {
   .card-list {
-    /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }
 }
@@ -119,14 +130,6 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   margin: 0;
 }
 
-.footer .about span {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 .footer .icons a {
   display: inline-block;
   width: 45px;
@@ -157,11 +160,6 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   text-align: center;
   line-height: 42px;
   vertical-align: middle;
-}
-
-.footer .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
 }
 
 .footer .footer-center p {
@@ -216,7 +214,8 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
     display: block;
     width: 100%;
     margin-bottom: 2px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .footer .footer-center i {
     margin-left: 0;
@@ -235,4 +234,94 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   justify-content: center;
   background-image: url(/image/crema.jpg);
 }
+/*pagina de gustos*/
+.titulosabores{
+  text-align: center;
+  color: #c805a3;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.contenedorlistas{
+  display: grid;
+
+}
+.subtitulogustos1, .subtitulogustos2,.subtitulogustos3,.subtitulogustos4{
+  grid-row: 1;
+  font-size: 35px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.listagusto{
+  grid-row: 2;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+@media all and (max-width: 460px) {
+  .contenedorlistas {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*promociones*/
+.promo{
+  text-align: center;
+  color:#c805a3;
+  font-size: 40px;
+  font-weight: 600;
+}
+.wrap{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tarjeta{
+  max-width: 300px;
+  min-height: 250px;
+  background-image: url(/image/kilo.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #FFF;
+  margin:20px;
+}
+.tarjeta:nth-child(2){
+  background-image: url(/image/carrusel.jpg);
+}
+.tarjeta:last-child{
+ background-image: url(/image/potecito.jpg);
+}
+.tarjeta-title{
+  color: #c805a3;
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.tarjeta-content{
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.tarjeta-btn{
+  display: block;
+  margin-left: auto;
+  border: 2px solid black;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+.tarjeta-btn:hover{
+ color:#c805a3;
+ background: black;
+}
+
 
