@@ -287,7 +287,7 @@ padding: 30px;
 .tarjeta{
   max-width: 300px;
   min-height: 250px;
-  background-image: url(/image/kilo.jpg);
+  background-image: url(./image/kilo.jpg);
   background-position: center;
   background-size: cover;
   padding: 30px;
@@ -297,10 +297,10 @@ padding: 30px;
   margin:20px;
 }
 .tarjeta:nth-child(2){
-  background-image: url(/image/carrusel.jpg);
+  background-image: url(./image/carrusel.jpg);
 }
 .tarjeta:last-child{
- background-image: url(/image/potecito.jpg);
+ background-image: url(./image/potecito.jp);
 }
 .tarjeta-title{
   color: #c805a3;
