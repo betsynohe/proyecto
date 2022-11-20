@@ -237,7 +237,7 @@ padding: 30px;
 }
 .row{
   justify-content: center;
-  background-image: url(/image/crema.jpg);
+  background-image: url(./image/crema.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -284,10 +284,9 @@ padding: 30px;
   justify-content: center;
   flex-wrap: wrap;
 }
-.tarjeta{
+.tarjeta1, .tarjeta2, .tarjeta3{
   max-width: 300px;
   min-height: 250px;
-  background-image: url(./image/kilo.jpg);
   background-position: center;
   background-size: cover;
   padding: 30px;
@@ -296,11 +295,14 @@ padding: 30px;
   color: black;
   margin:20px;
 }
-.tarjeta:nth-child(2){
-  background-image: url(./image/carrusel.jpg);
+.tarjeta1{
+  background-image: url(./image/kilo.jpg);
 }
-.tarjeta:last-child{
- background-image: url(./image/potecito.jp);
+.tarjeta2{
+ background-image: url(./image/potecito.jpg);
+}
+.tarjeta3{
+  background-image: url(./image/carrusel.jpg);
 }
 .tarjeta-title{
   color: #c805a3;
