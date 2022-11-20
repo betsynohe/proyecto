@@ -230,9 +230,16 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
+.escrito{
+text-align: center;
+padding: 30px;
+
+}
 .row{
   justify-content: center;
   background-image: url(/image/crema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*pagina de gustos*/
 .titulosabores{
@@ -284,9 +291,9 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   background-position: center;
   background-size: cover;
   padding: 30px;
-  border-radius: 3px;
+  border-radius: 30px;
   box-sizing: border-box;
-  color: #FFF;
+  color: black;
   margin:20px;
 }
 .tarjeta:nth-child(2){
@@ -303,7 +310,8 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   letter-spacing: 1.2px;
 }
 .tarjeta-content{
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
@@ -322,6 +330,90 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 .tarjeta-btn:hover{
  color:#c805a3;
  background: black;
+}
+/*pagina de contacto*/
+.container-main-form{
+  display: flex;
+}
+
+.container-contact h2{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2vh;
+  margin-top: 10vh;
+}
+
+.form1{
+  display: flex;
+  flex-direction: column;
+}
+
+.form1 input,textarea{
+  margin-bottom: 1vh;
+}
+
+.info-container{
+  display: flex;
+  margin-bottom: 1vh;
+}
+.container-main-form{
+  justify-content: center; 
+}
+.container-form input,textarea{
+  padding: 1.2vh;
+  border: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+}
+.container-form-text{
+  margin-left: 5vh;
+}
+.info-container{
+  margin-bottom: 2vh;
+}
+#btn{
+  background-color: black;
+  color: white;
+}
+
+.container-form{
+  width: 100%;
+}
+
+.container-form-text{
+  width: 100%;
+}
+
+
+.info-container p{
+  font-size: 1.3rem;
+  color: rgb(70, 69, 69);
+  font-weight: 500;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: rgb(122, 121, 121);
+  font-weight: 500;
+}
+
+.container-contact{
+  margin-bottom: 5vh;
+}
+@media (max-width: 636px){
+  .container-main-form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-form-text{
+    margin-top: 5vh;
+    margin-left: 0vh;
+  }
+  
 }
 
 
